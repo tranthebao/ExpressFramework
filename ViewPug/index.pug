@@ -1,0 +1,87 @@
+doctype html
+html(lang = "en")
+    head
+        title index
+    body
+        h1 hello world
+        //
+            pug <dirname> [options]
+            pug index.pug -p
+        //  just some paragraphs
+        p test tag P 
+        //- just some paragraphs
+        p test tag p
+        p
+            //
+                As much text as you want
+                can go here
+        ul
+            li itemA
+            li itemB
+        ul
+            li itemC
+            li itemD
+            li 
+                img(src="#", alt="")
+            li 
+                a:img
+            | Lorem ispum
+            p
+            | Nisl minim bibendum porro. Delectus <strong>adipisicing irure</strong> nullam excepturi.
+        a.btn A
+        a.btn.btn-primarikey B
+        a.btn.btn-rimarykey#login C
+        div#ida
+            div.classa
+        #ida
+            .classa
+        a(href="http://google.com") Google
+        a(href="http://google.com" class = 'button') Google
+        a(href="http://google.com",class = 'button') Google
+        input(type="text", name = 'test')
+        input(type="checkbox", name="check" checked = "checked")
+        input(data-json =` {
+            "very-long":"price off",
+            "data":true
+        }`)
+        -
+            var a= 1;
+            var b =2;
+            var c = a+b;
+        p #{c} result
+        - var title = "On Dogs: Man's Best Friend";
+        - var author = "enlore";
+        - var theGreat = "<span>escape!</span>";
+        h1= title.toLowerCase()
+        p Written with love by #{author.toUpperCase()}
+        p This will be safe: !{theGreat.substr(2, 10)}
+        if(true)
+            p 'I'm everythin'
+        else 
+            p 'T'm human
+        unless true
+            p 'I'm everything.
+        else
+            p 'T'm human.
+        - 
+            var friend = 0;
+        case friend
+            when 0
+                - break
+            when 1
+                p you have friends
+            default
+                p you have #{friend} friends
+        ul
+            each val in [1,2,3,4,5,6,7,8,9]
+                li val
+        ul
+            each val, index in ['zero', 'one', 'two']
+                li= index + ': '+ val
+        script.
+            var usingpug =true;
+            if(usingpug)
+                console.log('you are awesome');
+            else
+                console.log('use pug');
+        

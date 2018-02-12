@@ -1,0 +1,41 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "database.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tranthebao/express.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tranthebao/express/issues"
+  },
+  "homepage": "https://github.com/tranthebao/express#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bytes": "^3.0.0",
+    "cookie-parser": "^1.4.3",
+    "express-session": "^1.15.6",
+    "jade": "^1.11.0",
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "mongoose": "^5.0.3",
+=======
+>>>>>>> 3a4d4923ffd1e6733c39eaaff917815682c4345c
+=======
+    "mongoose": "^5.0.4",
+>>>>>>> upload package and tutorial authentications
+=======
+    "mongoose": "^5.0.4",
+>>>>>>> origin
+    "multer": "^1.3.0",
+    "pug": "^2.0.0-rc.4"
+  }
+}
